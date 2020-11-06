@@ -446,10 +446,26 @@ body {
 }
 
 .global__btn:hover {
-  cursor: pointer;
   border: 1px solid #FFFFFF;
   background-color: #2BBB97;
   color: #FFFFFF;
+}
+
+.global__more {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #25AEF6;
+  text-decoration: none;
+  position: relative;
+}
+
+.global__more span {
+  border-bottom: 1px solid transparent;
+}
+
+.global__more:hover span {
+  border-color: #25AEF6;
 }
 
 .section-header {
@@ -909,25 +925,6 @@ body {
   margin-bottom: 40px;
 }
 
-.section-about .about__more {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  color: #25AEF6;
-  text-decoration: none;
-  position: relative;
-}
-
-.section-about .about__more:hover:after {
-  content: '';
-  height: 1px;
-  width: 161px;
-  background: #25AEF6;
-  display: block;
-  position: absolute;
-  bottom: 0px;
-}
-
 .section-about .graphic__title {
   margin-bottom: 24px;
 }
@@ -995,13 +992,15 @@ body {
   font-size: 20px;
   line-height: 25px;
   color: #000000;
-  margin-bottom: 36px;
+  margin-bottom: 37px;
   text-transform: capitalize;
-  border-bottom: 1px solid transparent;
-  transition: .2s;
 }
 
 .section-specialties .specialities__speciality span {
+  border-bottom: 1px solid transparent;
+}
+
+.section-specialties .specialities__speciality span span {
   color: #A7C0E2;
 }
 
@@ -1013,13 +1012,9 @@ body {
   color: #25AEF6;
 }
 
-.section-specialties .specialities__speciality:hover {
-  color: #2BBB97;
-  border-color: #2BBB97;
-}
-
 .section-specialties .specialities__speciality:hover span {
   color: #2BBB97;
+  border-color: #2BBB97;
 }
 
 .section-specialties .specialities__speciality:hover::first-letter {
@@ -1033,7 +1028,7 @@ body {
 }
 
 .section-services {
-  margin-top: 124px;
+  margin-top: 123px;
   position: relative;
 }
 
@@ -1045,7 +1040,7 @@ body {
 .section-services .section-inner__btn {
   position: absolute;
   top: -3px;
-  right: 0;
+  right: 1px;
 }
 
 .section-services .section-inner__before, .section-services .section-inner__after {
@@ -1080,8 +1075,8 @@ body {
 
 .section-services .section-inner__after {
   position: absolute;
-  top: 123px;
-  right: -80px;
+  top: 122px;
+  right: -79px;
 }
 
 .section-services .section-inner__after:hover::after {
@@ -1090,7 +1085,7 @@ body {
 }
 
 .section-services__title {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .section-services__container {
@@ -1130,6 +1125,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 15px;
+  margin-left: -1px;
 }
 
 .section-services .services__service {
@@ -1138,12 +1134,14 @@ body {
   font-size: 12px;
   line-height: 15px;
   margin-bottom: 17px;
+  margin-left: -1px;
 }
 
 .section-services .services__about {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-left: -1px;
 }
 
 .section-services .services__about img {
@@ -1179,7 +1177,7 @@ body {
 .section-doctors .section-inner__btn {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1px;
 }
 
 .section-doctors .section-inner__before, .section-doctors .section-inner__after {
@@ -1214,8 +1212,8 @@ body {
 
 .section-doctors .section-inner__after {
   position: absolute;
-  top: 193px;
-  right: -80px;
+  top: 192px;
+  right: -79px;
 }
 
 .section-doctors .section-inner__after:hover::after {
@@ -1248,6 +1246,8 @@ body {
   border-radius: 8px;
   cursor: default;
   transition: all .2s;
+  position: relative;
+  z-index: 30;
 }
 
 .section-doctors .doctors__cart:hover {
@@ -1263,25 +1263,25 @@ body {
 }
 
 .section-doctors .cart__user {
-  height: 140px;
+  height: 139px;
   border-bottom: 1px solid #D2E1F5;
-  padding: 27px 30px 0px 30px;
+  padding: 26px 30px 0px 29px;
   display: flex;
 }
 
 .section-doctors .cart__info {
   display: flex;
   justify-content: space-between;
-  padding: 15px 28px 12px 30px;
+  padding: 15px 28px 11px 30px;
   border-bottom: 1px solid #D2E1F5;
 }
 
 .section-doctors .cart__address {
-  padding: 23px 29px 30px 30px;
+  padding: 22px 29px 30px 29px;
 }
 
 .section-doctors .cart__open {
-  padding: 0px 29px 30px 29px;
+  padding: 1px 29px 30px 29px;
   margin-top: -19px;
   position: absolute;
   z-index: 15;
@@ -1306,7 +1306,7 @@ body {
 .section-doctors .user__online {
   position: absolute;
   bottom: 26px;
-  left: 10px;
+  left: 9px;
 }
 
 .section-doctors .user__status {
@@ -1333,6 +1333,10 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #16395B;
+}
+
+.section-doctors .info__rating {
+  margin-left: -1px;
 }
 
 .section-doctors .info__comments {
@@ -1362,13 +1366,15 @@ body {
 }
 
 .section-doctors .info__status img {
-  margin-right: 7px;
+  margin-right: 6px;
+  margin-bottom: 1px;
 }
 
 .section-doctors .info__status span {
   font-weight: 750;
   font-size: 12px;
   line-height: 15px;
+  padding-bottom: 2px;
 }
 
 .section-doctors .address__title {
@@ -1388,15 +1394,17 @@ body {
 .section-doctors .open__title {
   font-weight: 450;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 14px;
   color: #AFB9DD;
+}
+
+.section-doctors .open__service {
+  line-height: 14px;
 }
 
 .section-doctors .open__service span {
   font-weight: 300;
   font-size: 12px;
-  line-height: 15px;
-  margin-top: 3px;
 }
 
 .section-doctors .open__service span span {
@@ -1426,6 +1434,181 @@ body {
   color: #32D29F;
 }
 
-.test__1 {
-  margin-top: 1000px;
+.section-reviews {
+  margin-top: 456px;
+  position: relative;
+}
+
+.section-reviews .section-inner {
+  width: 100%;
+  position: relative;
+}
+
+.section-reviews__title {
+  margin-bottom: 30px;
+}
+
+.section-reviews__container {
+  overflow: hidden;
+  position: absolute;
+  width: 1421px;
+}
+
+.section-reviews__reviews {
+  display: flex;
+}
+
+.section-reviews__review {
+  width: 451px;
+  height: 399px;
+  margin-right: 30px;
+}
+
+.section-reviews__more {
+  position: absolute;
+  left: 0;
+  top: 499px;
+}
+
+.section-reviews .review__top {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 13px;
+}
+
+.section-reviews .review__comment {
+  width: 451px;
+  height: 283px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  position: relative;
+}
+
+.section-reviews .review__comment:before {
+  content: '';
+  position: absolute;
+  top: -24px;
+  left: 40px;
+  border: 10px solid transparent;
+  border-bottom: 14px solid #F2F2F2;
+}
+
+.section-reviews .top__info {
+  margin-top: 1px;
+}
+
+.section-reviews .top__photo {
+  margin-right: 20px;
+}
+
+.section-reviews .top__name {
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  color: #3B3B3B;
+}
+
+.section-reviews .top__status {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2BBB97;
+}
+
+.section-reviews .top__status-negative {
+  color: #E85164;
+}
+
+.section-reviews .comment__datetime {
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 17px;
+  color: #AFB9DD;
+  padding: 32px 0px 1px 35px;
+}
+
+.section-reviews .comment__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 0 36px 30px 31px;
+}
+
+.section-news {
+  margin-top: 589px;
+}
+
+.section-news .section-inner {
+  width: 100%;
+}
+
+.section-news__title {
+  margin-bottom: 30px;
+}
+
+.section-news__news {
+  display: flex;
+}
+
+.section-news .news__post {
+  height: 399px;
+  margin-right: 30px;
+  margin-bottom: 41px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-news .post__img {
+  margin-bottom: 17.32px;
+}
+
+.section-news .post__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #16395B;
+}
+
+.section-news .post__about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-news .post__daytime {
+  font-weight: 450;
+  font-size: 12px;
+  line-height: 15px;
+  color: #AFB9DD;
+}
+
+.section-news .post__views {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #AFB9DD;
+  display: flex;
+}
+
+.section-news .views__left {
+  margin-right: 34px;
+  position: relative;
+}
+
+.section-news .views__left::before {
+  content: url("../img/section-news/views_icon.png");
+  position: absolute;
+  left: -22px;
+}
+
+.section-news .views__right {
+  margin-right: 1px;
+  position: relative;
+}
+
+.section-news .views__right::before {
+  content: url("../img/section-news/comments_icon.png");
+  position: absolute;
+  left: -22px;
 }

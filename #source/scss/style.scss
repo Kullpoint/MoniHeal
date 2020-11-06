@@ -156,10 +156,26 @@ body {
    transition: .2s;
 
    &:hover {
-      cursor: pointer;
       border: 1px solid #FFFFFF;
       background-color: #2BBB97;
       color: #FFFFFF;
+   }
+}
+
+.global__more {
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 25px;
+   color: #25AEF6;
+   text-decoration: none;
+   position: relative;
+   
+   span {
+      border-bottom: 1px solid transparent;
+   }
+
+   &:hover span {
+      border-color: #25AEF6;
    }
 }
 // === / Common ===
@@ -642,22 +658,6 @@ body {
 		}
 
 		&__more {
-         font-weight: 600;
-         font-size: 20px;
-         line-height: 25px;
-         color: #25AEF6;
-         text-decoration: none;
-         position: relative;
-
-         &:hover:after {
-            content: '';
-            height: 1px;
-            width: 161px;
-            background: #25AEF6; 
-            display:block;
-            position: absolute;
-            bottom: 0px;
-         }
 		}
    }
 
@@ -736,13 +736,15 @@ body {
          font-size: 20px;
          line-height: 25px;
          color: #000000;
-         margin-bottom: 36px;
+         margin-bottom: 37px;
          text-transform: capitalize;
-         border-bottom: 1px solid transparent;
-         transition: .2s;
 
          span {
-            color: #A7C0E2;
+            border-bottom: 1px solid transparent;
+
+            span {
+               color: #A7C0E2;
+            }
          }
 
          &:last-child {
@@ -753,17 +755,13 @@ body {
             color: #25AEF6;
          }
 
-         &:hover {
+         &:hover span {
             color: #2BBB97;
             border-color: #2BBB97;
+         }
 
-            span {
-               color: #2BBB97;
-            }
-
-            &::first-letter {
-               color: #2BBB97;
-            }
+         &:hover::first-letter {
+            color: #2BBB97;
          }
       }
       
@@ -778,7 +776,7 @@ body {
 //----------------------------------------------------------------------------
 // === / Section-Services ===
 .section-services {
-   margin-top: 124px;
+   margin-top: 123px;
    position: relative;
 
    .section-inner {
@@ -788,7 +786,7 @@ body {
       &__btn {
          position: absolute;
          top: -3px;
-         right: 0;
+         right: 1px;
       }
 
       &__before,
@@ -826,8 +824,8 @@ body {
 
       &__after {
          position: absolute;
-         top: 123px;
-         right: -80px;
+         top: 122px;
+         right: -79px;
 
          &:hover {
             &::after {
@@ -839,7 +837,7 @@ body {
    }
 
 	&__title {
-      margin-bottom: 31px;
+      margin-bottom: 30px;
    }
 
    &__container {
@@ -880,6 +878,7 @@ body {
          font-size: 16px;
          line-height: 20px;
          margin-bottom: 15px;
+         margin-left: -1px;
       }
 
       &__service {
@@ -888,12 +887,14 @@ body {
          font-size: 12px;
          line-height: 15px;
          margin-bottom: 17px;
+         margin-left: -1px;
       }
 
       &__about {
          display: flex;
          justify-content: flex-start;
          align-items: center;
+         margin-left: -1px;
 
          img {
             margin-right: 8px;
@@ -933,7 +934,7 @@ body {
 		&__btn {
          position: absolute;
          top: 0;
-         right: 0;
+         right: 1px;
 		}
 
 		&__before,
@@ -971,8 +972,8 @@ body {
 
       &__after {
          position: absolute;
-         top: 193px;
-         right: -80px;
+         top: 192px;
+         right: -79px;
 
          &:hover {
             &::after {
@@ -1009,6 +1010,8 @@ body {
          border-radius: 8px;
          cursor: default;
          transition: all .2s;
+         position: relative;
+         z-index: 30;
 
          &:hover {
             border-color: #2BBB97;
@@ -1027,25 +1030,25 @@ body {
 
    .cart {
       &__user {
-         height: 140px;
+         height: 139px;
          border-bottom: 1px solid #D2E1F5;;
-         padding: 27px 30px 0px 30px;
+         padding: 26px 30px 0px 29px;
          display: flex;
       }
 
       &__info {
          display: flex;
          justify-content: space-between;
-         padding: 15px 28px 12px 30px;
+         padding: 15px 28px 11px 30px;
          border-bottom: 1px solid #D2E1F5;;
       }
 
       &__address {
-         padding: 23px 29px 30px 30px;
+         padding: 22px 29px 30px 29px;
       }
 
       &__open {
-         padding: 0px 29px 30px 29px;
+         padding: 1px 29px 30px 29px;
          margin-top: -19px;
          position: absolute;
          z-index: 15;
@@ -1072,7 +1075,7 @@ body {
       &__online {
          position: absolute;
          bottom: 26px;
-         left: 10px;
+         left: 9px;
       }
 
       &__status {
@@ -1106,7 +1109,7 @@ body {
    }
    .info {
       &__rating {
-
+         margin-left: -1px;
       }
 
       &__comments {
@@ -1137,13 +1140,15 @@ body {
          margin-top: 6px;
 
          img {
-            margin-right: 7px;
+            margin-right: 6px;
+            margin-bottom: 1px;
          }
 
          span {
             font-weight: 750;
             font-size: 12px;
             line-height: 15px;
+            padding-bottom: 2px;
          }
       }
    }
@@ -1165,23 +1170,19 @@ body {
    }
 
    .open {
-
-      &__price {
-      }
-
       &__title {
          font-weight: 450;
          font-size: 12px;
-         line-height: 15px;
+         line-height: 14px;
          color: #AFB9DD;
       }
 
       &__service {
+         line-height: 14px;
+
          span {
             font-weight: 300;
             font-size: 12px;
-            line-height: 15px;
-            margin-top: 3px;
 
             span {
                font-weight: 600;
@@ -1215,6 +1216,205 @@ body {
 }
 // === / Section-Doctors ===
 //----------------------------------------------------------------------------
-.test__1 {
-   margin-top: 1000px;
+// === Section-Reviews ===
+.section-reviews {
+   margin-top: 456px;
+   position: relative;
+
+   .section-inner {
+      width: 100%;
+      position: relative;
+   }
+
+	&__title {
+      margin-bottom: 30px;
+   }
+   
+   &__container {
+      overflow: hidden;
+      position: absolute;
+      width: 1421px;
+   }
+
+   &__reviews {
+      display: flex;
+   }
+
+	&__review {
+      width: 451px;
+      height: 399px;
+      margin-right: 30px;
+	}
+
+	&__more {
+      position: absolute;
+      left: 0;
+      top: 499px;
+   }
+
+   .review {
+      &__top {
+         display: flex;
+         justify-content: flex-start;
+         margin-bottom: 13px;
+      }
+
+		&__comment {
+         width: 451px;
+         height: 283px;
+         background: #F2F2F2;
+         border-radius: 4px;
+         position: relative;
+
+         &:before {
+            content: '';
+            position: absolute;
+            top: -24px;
+            left: 40px;
+            border: 10px solid transparent;
+            border-bottom: 14px solid #F2F2F2;
+         }
+		}
+   }
+
+   .top {
+      &__info {
+         margin-top: 1px;
+      }
+
+      &__photo {
+         margin-right: 20px;
+		}
+
+		&__name {
+         font-weight: 450;
+         font-size: 20px;
+         line-height: 25px;
+         margin-bottom: 5px;
+         color: #3B3B3B;
+		}
+
+		&__status {
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 25px;
+         color: #2BBB97;
+      }
+
+      &__status-negative {
+         color: #E85164;
+		}
+   }
+
+   .comment {
+		&__datetime {
+         font-weight: 450;
+         font-size: 14px;
+         line-height: 17px;
+         color: #AFB9DD;
+         padding: 32px 0px 1px 35px;
+		}
+
+		&__text {
+         font-weight: 300;
+         font-size: 24px;
+         line-height: 29px;
+         padding: 0 36px 30px 31px;
+		}
+   }
 }
+// === / Section-Reviews ===
+//----------------------------------------------------------------------------
+// === Section-News ===
+.section-news {
+   margin-top: 589px;
+
+   .section-inner {
+      width: 100%;
+   }
+
+	&__title {
+      margin-bottom: 30px;
+	}
+
+	&__container {
+	}
+
+	&__news {
+      display: flex;
+   }
+
+   &__more {
+
+   }
+   
+   .news {
+		&__post {
+         height: 399px;
+         margin-right: 30px;
+         margin-bottom: 41px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+   }
+
+   .post {
+		&__img {
+         margin-bottom: 17.32px;
+		}
+
+		&__title {
+         font-weight: 600;
+         font-size: 24px;
+         line-height: 29px;
+         color: #16395B;
+		}
+
+		&__about {
+         display: flex;
+         justify-content: space-between;
+		}
+
+		&__daytime {
+         font-weight: 450;
+         font-size: 12px;
+         line-height: 15px;
+         color: #AFB9DD;
+		}
+
+		&__views {
+         font-weight: 600;
+         font-size: 12px;
+         line-height: 15px;
+         color: #AFB9DD;
+         display: flex;
+		}
+   }
+
+   .views {
+      &__left {
+         margin-right: 34px;
+         position: relative;
+
+         &::before {
+            content: url('../img/section-news/views_icon.png');
+            position: absolute;
+            left: -22px;
+         }
+      }
+
+      &__right {
+         margin-right: 1px;
+         position: relative;
+
+         &::before {
+            content: url('../img/section-news/comments_icon.png');
+            position: absolute;
+            left: -22px;
+         }
+      }
+   }
+}
+// === / Section-News ===
+//----------------------------------------------------------------------------
