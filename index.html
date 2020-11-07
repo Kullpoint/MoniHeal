@@ -8,8 +8,35 @@
    <title>MoniHeal</title>
 </head>
 <body>
+   <!-- Preloader -->
+      <div class="global__mask">
+         <div class="global__loader"></div>
+      </div>
+   <!-- / Preloader -->
+<div class="global__wrapper">
+   <!-- Float-Header -->
+   <section class="section-outer float-header">
+      <div class="section-inner">
+         <div class="float-header__icon">
+            <img src="img/float-header/icon.png" alt="">
+         </div>
+         <nav class="float-header__nav">
+            <a href="#" class="nav__item">Про клініку</a>
+            <a href="#" class="nav__item">Спеціальності</a>
+            <a href="#" class="nav__item">Послуги</a>
+            <a href="#" class="nav__item">Лікарі</a>
+            <a href="#" class="nav__item">Відгуки</a>
+            <a href="#" class="nav__item">Новини</a>
+         </nav>
+         <div class="float-header__call">
+            <div class="call__number">+38 (050) 137 - 60 - 41</div>
+            <a href="#" class="call__btn">Перезвоніть мені</a>
+         </div>
+      </div>
+   </section>
+   <!-- / Float-Header -->
    <!-- Section-Header -->
-   <section class="section-outer section-header">
+   <header class="section-outer section-header">
       <div class="section-inner">
          <div class="section-header__logo">
             <img src="img/section-header/logo.png" alt="">
@@ -24,7 +51,7 @@
             <div class="section-header__menu"><span class="left">Меню</span><span><img src="img/section-header/menu.svg" alt=""></span></div>
          </div>
       </div>
-   </section>
+   </header>
    <!-- / Section-Header -->
    <!-- Section-Main -->
    <main class="section-outer section-main">
@@ -56,7 +83,24 @@
                      <span></span> м. Київ, вул. Михайла Максимовича (Трутенка), 3, Голосіївський район
                   </address>
                   <div class="about__phone">
-                     +38 (050) 137 - 60 - 41 <img src="img/section-main/phone_dropdown.png" alt="">
+                     +38 (050) 137 - 60 - 41 <img id="phone__open" src="img/section-main/phone_dropdown.png" alt="">
+                     <div class="about__phone-list" id="phone__list" style="display: none;">
+                        <div class="phone-list__title">
+                           <span>Контактні телефони</span>
+                           <img id="phone__close" src="img/section-main/phone_close.png" alt="">
+                        </div>
+                        <div class="phone-list__phones">
+                           <div class="phone-list__phone">
+                              +38 (050) 137 - 60 - 41
+                           </div>
+                           <div class="phone-list__phone">
+                              +38 (044) 222 - 16 - 19
+                           </div>
+                           <div class="phone-list__phone phone__last">
+                              +38 (063) 985 - 55 - 55
+                           </div>
+                        </div>
+                     </div>
                   </div>
                   <div class="about__site">
                      smartmedicalcenter.ua
@@ -724,23 +768,23 @@
             <div class="section-footer__block">
                <div class="block__title">Розділи</div>
                <ul class="block__list">
-                  <li class="block__section">Про нас</li>
-                  <li class="block__section">Користувачам</li>
-                  <li class="block__section">Лікарям</li>
-                  <li class="block__section">Клінікам</li>
-                  <li class="block__section">Новини</li>
-                  <li class="block__section">Знайти фахівця</li>
-                  <li class="block__section">Клініки</li>
+                  <li class="block__section"><a href="#">Про нас</a></li>
+                  <li class="block__section"><a href="#">Користувачам</a></li>
+                  <li class="block__section"><a href="#">Лікарям</a></li>
+                  <li class="block__section"><a href="#">Клінікам</a></li>
+                  <li class="block__section"><a href="#">Новини</a></li>
+                  <li class="block__section"><a href="#">Знайти фахівця</a></li>
+                  <li class="block__section"><a href="#">Клініки</a></li>
                </ul>
             </div>
             <div class="section-footer__block">
                <div class="block__title">Ресурси</div>
                <ul class="block__list">
-                  <li class="block__section">Захист даних</li>
-                  <li class="block__section">Політика приватності</li>
-                  <li class="block__section">Правила користування</li>
-                  <li class="block__section">Довідковий центр</li>
-                  <li class="block__section">Зворотній звязок</li>
+                  <li class="block__section"><a href="#">Захист даних</a></li>
+                  <li class="block__section"><a href="#">Політика приватності</a></li>
+                  <li class="block__section"><a href="#">Правила користування</a></li>
+                  <li class="block__section"><a href="#">Довідковий центр</a></li>
+                  <li class="block__section"><a href="#">Зворотній звязок</a></li>
                </ul>
             </div>
             <div class="section-footer__block">
@@ -765,6 +809,10 @@
          </div>
       </div>
    </footer>
-   <!-- Section-Footer -->
+   <!-- / Section-Footer -->
+</div>
+   <!-- Scripts -->
+   <script src="js/main.js"></script>
+   <!-- / Scripts -->
 </body>
 </html>
