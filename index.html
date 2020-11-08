@@ -112,12 +112,12 @@
             </div>
             <div class="section-main__right">
                <div class="section-main__photos">
-                  <a href="" class="photos__title">
+                  <a id="gallery-open" class="photos__title">
                      Переглянути 12 Фото
                   </a>
                </div>
                <div class="section-main__map">
-                  <a href="" class="map__title">
+                  <a id="map-open" class="map__title">
                      Клініка на мапі
                   </a>
                </div>
@@ -125,6 +125,119 @@
          </div>
       </div>
    </main>
+   <div id="gallery" class="section-main__gallery-opened">
+      <div class="gallery-opened__container">
+         <div id="view__photo" class="gallery-opened__view">
+            <div id="view__container">
+               <img class="view__img" src="img/section-main/gallery/photo_1.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_2.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_3.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_4.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_5.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_6.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_7.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_8.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_9.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_10.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_11.jpg" alt="">
+               <img class="view__img" src="img/section-main/gallery/photo_12.jpg" alt="">
+            </div>
+         </div>
+         <div class="gallery-opened__listcontainer">
+            <div class="gallery-opened__list" id="photos__list">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_1.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_2.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_3.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_4.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_5.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_6.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_7.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_8.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_9.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_10.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_11.jpg" alt="">
+               <img class="gallery-opened__photo" src="img/section-main/gallery/photo_12.jpg" alt="">
+            </div>
+         </div>
+         <div class="photo-before__btn global-before__btn"><img src="img/section-services/arrow_left.svg" alt=""></div>
+         <div class="photo-after__btn global-after__btn"><img src="img/section-services/arrow_right.svg" alt=""></div>
+
+         <div class="list-before__btn global-before__btn"><img src="img/section-services/arrow_left.svg" alt=""></div>
+         <div class="list-after__btn global-after__btn"><img src="img/section-services/arrow_right.svg" alt=""></div>
+         <div id="gallery-close" class="gallery__close"><img src="img/section-main/map/close.png" alt=""></div>
+      </div>
+   </div>
+   <div id="map" class="section-main__map-opened">
+      <div class="map-opened__container">
+         <iframe class="map-opened__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635.1255637729466!2d30.5236766!3d50.4503713!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5058bfe397%3A0x23664d66cf505bed!2z0JDQv9GC0LXQutCwINCU0L7QsdGA0L7Qs9C-INCU0L3Rjw!5e0!3m2!1sru!2sua!4v1604836425520!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         <div class="map-opened__about">
+            <div class="about__top">
+               <div class="about__icon">
+                  <img src="img/section-main/map/icon.png" alt="">
+               </div>
+               <div class="about__title">
+                  <span class="title">Flexis: Рух без болі</span>
+                  <span class="subtitle">Медичний центр</span>
+               </div>
+            </div>
+            <div class="about__center">
+               <div class="about__rating">
+                  <div class="rating__title">Рейтинг</div>
+                  <div class="rating__count">
+                     <img src="img/section-main/map/rating.png" alt=""><span>4,6</span>
+                  </div>
+               </div>
+               <div class="about__doctors">
+                  <div class="doctors__title">Лікарів</div>
+                  <div class="doctors__count">
+                     <img src="/img/section-main/map/doctors.png" alt="">
+                  </div>
+               </div>
+               <div class="about__services">
+                  <div class="services__title">Послуг</div>
+                  <div class="services__count">
+                     <img src="img/section-main/map/services.png" alt=""><span>10</span>
+                  </div>
+               </div>
+            </div>
+            <div class="about__bottom">
+               <div class="about__address">
+                  <div class="address__title">Адреса</div>
+                  <div class="address__text">
+                     м. Київ, вул. Михайла Максимовича (Трутенка), 3, Голосіївський район
+                  </div>
+               </div>
+               <div class="about__graphic">
+                  <div class="graphic__title">Графік роботи</div>
+                  <div class="graphic__body">
+                     <div class="graphic__item">
+                        <span class="day">Понеділок:</span><span class="time">8:30-19:00</span>
+                     </div>
+                     <div class="graphic__item">
+                        <span class="day">Вівторок:</span><span class="time">8:30-19:00</span>
+                     </div>
+                     <div class="graphic__item">
+                        <span class="day">Середа:</span><span class="time">8:30-19:00</span>
+                     </div>
+                     <div class="graphic__item">
+                        <span class="day">Четвер:</span><span class="time">8:30-19:00</span>
+                     </div>
+                     <div class="graphic__item">
+                        <span class="day">Пятниця:</span><span class="time">8:30-19:00</span>
+                     </div>
+                     <div class="graphic__item">
+                        <span class="day">Субота:</span><span class="time">8:30-19:00</span>
+                     </div>
+                     <div class="graphic__item">
+                        <span class="day">Неділя:</span><span class="time">Вихідний</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="map-close" class="map__close"><img src="img/section-main/map/close.png" alt=""></div>
+      </div>
+   </div>
    <!-- / Section-Main -->
    <!-- Section-About -->
    <section class="section-outer section-about">
@@ -310,8 +423,8 @@
             </div>
          </div>
          <a href="#" class="section-inner__btn global__btn">Показати всі</a>
-         <div class="section-inner__before"><img src="img/section-services/arrow_left.svg" alt=""></div>
-         <div class="section-inner__after"><img src="img/section-services/arrow_right.svg" alt=""></div>
+         <div class="section-inner__before global-before__btn"><img src="img/section-services/arrow_left.svg" alt=""></div>
+         <div class="section-inner__after global-after__btn"><img src="img/section-services/arrow_right.svg" alt=""></div>
       </div>
    </section>
    <!-- / Section-Services -->
@@ -594,8 +707,8 @@
             </div>
          </div>
          <a href="#" class="section-inner__btn global__btn">Показати всі</a>
-         <div class="section-inner__before"><img src="img/section-services/arrow_left.svg" alt=""></div>
-         <div class="section-inner__after"><img src="img/section-services/arrow_right.svg" alt=""></div>
+         <div class="section-inner__before global-before__btn"><img src="img/section-services/arrow_left.svg" alt=""></div>
+         <div class="section-inner__after global-after__btn"><img src="img/section-services/arrow_right.svg" alt=""></div>
       </div>
    </section>
    <!-- / Section-Doctors -->
