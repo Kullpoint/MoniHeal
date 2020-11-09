@@ -1584,6 +1584,238 @@ body {
       cursor: pointer;
    }
 }
+
+@media (max-width: $screen-xl-max) {
+   .section-main__gallery-opened {
+      .gallery-opened {
+         &__container {
+            width: 1061px;
+            height: 700px;
+         }
+   
+         &__listcontainer {
+            width: 1061px;
+         }
+      
+         &__view {
+            width: 100%;
+            height: 500px;
+            
+            #view__container {
+               height: 500px;
+            }
+   
+            .view__img {
+               width: 1061px;
+            }
+         }
+      }
+   
+      .photo-before {
+         &__btn {
+            top: 220px;
+         }
+      }
+   
+      .photo-after {
+         &__btn {
+            top: 220px;
+         }
+      }
+   
+      .list-before {
+         &__btn {
+            top: 580px;
+         }
+      }
+      
+      .list-after {
+         &__btn {
+            top: 580px;
+         }
+      }
+   }
+}
+
+@media (max-width: $screen-lg-max) {
+   .section-main__gallery-opened {
+      .gallery-opened {
+         &__container {
+            width: 701px;
+            height: 700px;
+         }
+   
+         &__listcontainer {
+            width: 701px;
+         }
+      
+         &__view {
+            width: 100%;
+            height: 400px;
+
+            #view__container {
+               height: 400px;
+            }
+   
+            .view__img {
+               width: 701px;
+            }
+         }
+      
+         &__list {
+            height: 123px;
+         }
+   
+         &__photo {
+            width: 200px;
+            height: 123px;
+         }
+      }
+   
+      .photo-before {
+         &__btn {
+            top: 170px;
+         }
+      }
+   
+      .photo-after {
+         &__btn {
+            top: 170px;
+         }
+      }
+   
+      .list-before {
+         &__btn {
+            top: 460px;
+         }
+      }
+      
+      .list-after {
+         &__btn {
+            top: 460px;
+         }
+      }
+   }
+
+   .section-main__map-opened {
+      .map-opened {
+         &__container {
+            width: 701px;
+            height: 800px;
+            flex-direction: column;
+         }
+   
+         &__map {
+            width: 700px;
+         }
+   
+         &__about {
+            width: 701px;
+         }
+      }
+   }
+}
+
+@media (max-width: $screen-md-max) {
+   .section-main__gallery-opened {
+      .gallery-opened {
+         &__container {
+            width: 321px;
+            height: 200px;
+         }
+   
+         &__listcontainer {
+            display: none;
+         }
+      
+         &__view {
+            height: 200px;
+            
+            #view__container {
+               height: 200px;
+            }
+   
+            .view__img {
+               width: 321px;
+            }
+         }
+      }
+   
+      .photo-before {
+         &__btn {
+            top: 75px;
+            left: -20px;
+         }
+      }
+   
+      .photo-after {
+         &__btn {
+            top: 75px;
+            right: -20px;
+         }
+      }
+   
+      .list-before {
+         &__btn {
+            display: none;
+         }
+      }
+      
+      .list-after {
+         &__btn {
+            display: none;
+         }
+      }
+   
+      .gallery__close {
+         position: absolute;
+         top: -32px;
+         right: -29px;
+         cursor: pointer;
+      }
+   }
+
+   .section-main__map-opened {
+      .map-opened {
+         &__container {
+            width: 321px;
+            height: 600px;
+         }
+   
+         &__map {
+            width: 320px;
+            height: 200px;
+         }
+   
+         &__about {
+            width: 321px;
+            height: 400px ;
+         }
+      }
+
+      .about {
+         &__icon {
+            margin: 7px 20px 3px 29px;
+         }
+   
+         &__title {
+            .title {
+               margin-top: 17px;
+            }
+         }
+      }
+
+      .address {
+         &__title {
+            margin: 10px 0 3px 0px;
+         }
+   
+         &__text {
+            margin-bottom: 10px;
+         }
+      }
+   }
+}
 // === / Section-Main ===
 //----------------------------------------------------------------------------
 // === Section-About ===
