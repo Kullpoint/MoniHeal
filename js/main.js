@@ -102,14 +102,6 @@ photoBeforeBtn.addEventListener('click', () => {
       
    }
 
-   if (currentImg > 4 && currentImg < viewImg.length) {
-      if (listLeft != 0) {
-         listLeft += 288;
-
-         photosList.style = `left: ${listLeft}px;`;
-      }
-   } 
-
    if (currentImg === viewImg.length -1) {
       listLeft = -2016;
    
@@ -140,15 +132,9 @@ photoAfterBtn.addEventListener('click', () => {
 
       }
 
-      if (currentImg > 4 && currentImg <= viewImg.length) {
-         if (listLeft != -2016) {
-            listLeft -= 288;
-
-            photosList.style = `left: ${listLeft}px;`;
-         }
-      } else {
+      if (currentImg === 0) {
          listLeft = 0;
-
+      
          photosList.style = `left: ${listLeft}px;`;
       }
 });
