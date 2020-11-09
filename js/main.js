@@ -1,20 +1,70 @@
+// Section services buttons
+const servicesBeforeBtn = document.querySelector('.section-services__before');
+const servicesAfterBtn = document.querySelector('.section-services__after');
+const servicesContainer = document.querySelector('.section-services__services');
+let servicesLeft = 0;
+
+servicesBeforeBtn.addEventListener('click', () => {
+   if (servicesLeft < 0) {
+      servicesLeft += 360;
+      servicesContainer.style = `transform: translateX(${servicesLeft}px)`;
+   } else if (servicesLeft == 0) {
+      servicesLeft = -720;
+      servicesContainer.style = `transform: translateX(${servicesLeft}px)`;
+   }
+});
+
+servicesAfterBtn.addEventListener('click', () => {
+   if (servicesLeft != -720) {
+      servicesLeft -= 360;
+      servicesContainer.style = `transform: translateX(${servicesLeft}px)`;
+   } else {
+      servicesLeft = 0;
+      servicesContainer.style = `transform: translateX(${servicesLeft}px)`;
+   }
+});
+
+// =================================================================================
+
+// Section services buttons
+const doctorsBeforeBtn = document.getElementById('doctors-before');
+const doctorsAfterBtn = document.getElementById('doctors-after');
+const doctorsContainer = document.querySelector('.section-doctors__doctors');
+let doctorsLeft = 0;
+
+doctorsBeforeBtn.addEventListener('click', () => {
+   if (doctorsLeft < 0) {
+      doctorsLeft += 360;
+      doctorsContainer.style = `transform: translateX(${doctorsLeft}px)`;
+   } else if (doctorsLeft == 0) {
+      doctorsLeft = -720;
+      doctorsContainer.style = `transform: translateX(${doctorsLeft}px)`;
+   }
+});
+
+doctorsAfterBtn.addEventListener('click', () => {
+   if (doctorsLeft != -720) {
+      doctorsLeft -= 360;
+      doctorsContainer.style = `transform: translateX(${doctorsLeft}px)`;
+   } else {
+      doctorsLeft = 0;
+      doctorsContainer.style = `transform: translateX(${doctorsLeft}px)`;
+   }
+});
+
+// =================================================================================
+
 // Phone list (open and close)
 const phoneOpenBtn = document.getElementById('phone__open');
 const phoneCloseBtn = document.getElementById('phone__close');
 const phoneList = document.getElementById('phone__list');
 
 phoneOpenBtn.addEventListener('click', () => {
-   let display = phoneList.style.display;
-   if (display === 'none') {
-      phoneList.style.display = 'block';
-   }
+   phoneList.classList.add('phone-list__open');
 });
 
 phoneCloseBtn.addEventListener('click', () => {
-   let display = phoneList.style.display;
-   if (display === 'block') {
-      phoneList.style.display = 'none';
-   }
+   phoneList.classList.remove('phone-list__open');
 });
 
 // =================================================================================

@@ -526,6 +526,7 @@ body {
   border-radius: 30px;
   cursor: pointer;
   transition: .2s;
+  user-select: none;
 }
 
 .global-before__btn:hover,
@@ -1150,6 +1151,11 @@ body {
   cursor: pointer;
 }
 
+.section-main .about__phone .phone-list__open {
+  opacity: 1;
+  visibility: visible;
+}
+
 .section-main .about__phone-list {
   position: absolute;
   top: -16px;
@@ -1161,6 +1167,9 @@ body {
   border: 1px solid #C0D3FE;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
 }
 
 .section-main .about__phone-list .phone-list__title {
@@ -2077,22 +2086,23 @@ body {
 
 .section-services .section-inner {
   width: 100%;
+  position: relative;
 }
 
 .section-services__btn {
   position: absolute;
-  top: -62px;
-  right: 11px;
+  top: -3px;
+  right: 1px;
 }
 
 .section-services__before {
-  top: 64px;
+  top: 123px;
   left: -80px;
 }
 
 .section-services__after {
-  top: 63px;
-  right: -69px;
+  top: 122px;
+  right: -79px;
 }
 
 .section-services__title {
@@ -2103,14 +2113,15 @@ body {
   width: 1421px;
   height: 190px;
   position: relative;
+  overflow: hidden;
 }
 
 .section-services__services {
   width: 1421px;
   height: 200px;
-  overflow: hidden;
   position: absolute;
   display: flex;
+  transition: all .4s;
 }
 
 .section-services .services__block {
@@ -2260,14 +2271,15 @@ body {
   width: 1421px;
   height: 482px;
   position: relative;
+  overflow: hidden;
 }
 
 .section-doctors__doctors {
   width: 1421px;
   height: 492px;
   position: absolute;
-  overflow: hidden;
   display: flex;
+  transition: all .4s;
 }
 
 .section-doctors .doctors__cart {
