@@ -1,3 +1,25 @@
+// Section float-header menu
+const floatMenuOpen = document.getElementById('float__menu-open');
+const floatMenu = document.querySelector('.float-header__nav-small-list');
+const floatMenuItem = floatMenu.getElementsByTagName('li');
+
+floatMenuOpen.addEventListener('click', () => {
+   if (floatMenu.classList.contains('float-header__nav-small-list-open')) {
+      floatMenu.classList.remove('float-header__nav-small-list-open');
+
+   } else {
+      floatMenu.classList.add('float-header__nav-small-list-open');
+   }
+});
+
+for (let item of floatMenuItem) {
+   item.addEventListener('click', () => {
+      floatMenu.classList.remove('float-header__nav-small-list-open');
+   });
+}
+
+// =================================================================================
+
 // Section header languages
 const agnleOpen = document.getElementById('angle-open');
 const angles = document.getElementById('angles');
