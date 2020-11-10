@@ -1,3 +1,49 @@
+// Section header languages
+const agnleOpen = document.getElementById('angle-open');
+const angles = document.getElementById('angles');
+const languagesList = document.querySelector('.languages__list');
+const languagesListItem = languagesList.getElementsByTagName('li');
+
+agnleOpen.addEventListener('click', () => {
+   if (angles.style.transform == "rotate(180deg)") {
+      angles.style.transform = "rotate(0deg)";
+      languagesList.classList.remove('languages__list-open');
+
+   } else {
+      angles.style.transform = "rotate(180deg)";
+      languagesList.classList.add('languages__list-open');
+   }
+});
+
+for (let item of languagesListItem) {
+   item.addEventListener('click', () => {
+      angles.style.transform = "rotate(0deg)";
+      languagesList.classList.remove('languages__list-open');
+   });
+}
+
+// Section header menu
+const menuOpen = document.getElementById('menu-open');
+const menu = document.querySelector('.section-header__menu-list');
+const menuItem = menu.getElementsByTagName('li');
+
+menuOpen.addEventListener('click', () => {
+   if (menu.classList.contains('section-header__menu-list-open')) {
+      menu.classList.remove('section-header__menu-list-open');
+
+   } else {
+      menu.classList.add('section-header__menu-list-open');
+   }
+});
+
+for (let item of menuItem) {
+   item.addEventListener('click', () => {
+      menu.classList.remove('section-header__menu-list-open');
+   });
+}
+
+// =================================================================================
+
 // Section services buttons
 const servicesBeforeBtn = document.querySelector('.section-services__before');
 const servicesAfterBtn = document.querySelector('.section-services__after');

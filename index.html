@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
    <link rel="shortcut icon" href="img/shortcut.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
    <title>MoniHeal</title>
 </head>
 <body>
@@ -49,9 +50,32 @@
             <button type="submit" class="search__btn">Знайти</button>
          </form>
          <div class="section-header__right">
-            <div class="section-header__languages">Укр<span><img src="img/section-header/keyboard_arrow_open.svg" alt=""></span></div>
+            <div class="section-header__languages">
+               <span id="angle-open">Укр<i id="angles" class="fas fa-angle-down"></i></span>
+               <ul class="languages__list">
+                  <li id="ua" class="languages__ua">
+                     <span>Українська</span> <img src="img/section-header/Ukraine.png" alt="">
+                  </li>
+                  <li id="ru" class="languages__ru">
+                     <span>Русский</span> <img src="img/section-header/Russia.png" alt="">
+                  </li>
+                  <li id="en" class="languages__en">
+                     <span>English</span> <img src="img/section-header/United-Kingdom.png" alt="">
+                  </li>
+               </ul>
+            </div>
             <a class="section-header__login"><span><img src="img/section-header/lock_open.svg" alt=""></span>Увійти</a>
-            <div class="section-header__menu"><span class="left">Меню</span><span><img src="img/section-header/menu.svg" alt=""></span></div>
+            <div class="section-header__menu">
+               <span id="menu-open"><span class="left">Меню</span><img src="img/section-header/menu.svg" alt=""></span>
+               <ul class="section-header__menu-list">
+                  <li class="menu-list__item"><a href="#section-about">Про клініку</a></li>
+                  <li class="menu-list__item"><a href="#section-specialties">Спеціальності</a></li>
+                  <li class="menu-list__item"><a href="#section-services">Послуги</a></li>
+                  <li class="menu-list__item"><a href="#section-doctors">Лікарі</a></li>
+                  <li class="menu-list__item"><a href="#section-reviews">Відгуки</a></li>
+                  <li class="menu-list__item"><a href="#section-news">Новини</a></li>
+               </ul>
+            </div>
          </div>
       </div>
    </header>
@@ -243,7 +267,7 @@
    </div>
    <!-- / Section-Main -->
    <!-- Section-About -->
-   <section class="section-outer section-about">
+   <section id="section-about" class="section-outer section-about">
       <div class="section-inner">
          <div class="section-about__about">
             <div class="about__title global__titles">
@@ -297,7 +321,7 @@
    </section>
    <!-- / Section-About -->
    <!-- Section-Specialities -->
-   <section class="section-outer section-specialties">
+   <section id="section-specialties" class="section-outer section-specialties">
       <div class="section-inner">
          <div class="section-specialties__title global__titles">Спеціальності <span>(43)</span></div>
          <div class="section-specialties__specialities">
@@ -322,7 +346,7 @@
    </section>
    <!-- / Section-Specialities -->
    <!-- Section-Services -->
-   <section class="section-outer section-services">
+   <section id="section-services" class="section-outer section-services">
       <div class="section-inner">
          <div class="section-services__title global__titles">Послуги <span>(28)</span></div>
          <div class="section-services__container">
@@ -432,7 +456,7 @@
    </section>
    <!-- / Section-Services -->
    <!-- Section-Doctors -->
-   <section class="section-outer section-doctors">
+   <section id="section-doctors" class="section-outer section-doctors">
       <div class="section-inner">
          <div class="section-doctors__title global__titles">Лікарі <span>(28)</span></div>
          <div class="section-doctors__container">
@@ -716,7 +740,7 @@
    </section>
    <!-- / Section-Doctors -->
    <!-- Section-Reviews -->
-   <section class="section-outer section-reviews">
+   <section id="section-reviews" class="section-outer section-reviews">
       <div class="section-inner">
          <div class="section-reviews__title global__titles">Відгуки <span>(14)</span></div>
          <div class="section-reviews__container">
@@ -773,7 +797,7 @@
    </section>
    <!-- / Section-Reviews -->
    <!-- Section-News -->
-   <section class="section-outer section-news">
+   <section id="section-news" class="section-outer section-news">
       <div class="section-inner">
          <div class="section-news__title global__titles">Новини клініки <span>(28)</span></div>
          <div class="section-news__container">
